@@ -3,6 +3,7 @@
 Console.WriteLine("Enter a Number for Logical Programming Problem.\n");
 Console.WriteLine("1 for Fibonacci Series");
 Console.WriteLine("2 for Perfect Number");
+Console.WriteLine("3 for Prime Number");
 
 int Problem = Convert.ToInt32(Console.ReadLine());
 
@@ -15,6 +16,10 @@ switch (Problem)
     case 2:
         PerfectNumber perfectNumber = new PerfectNumber();
         perfectNumber.Perfect();
+        break;
+    case 3:
+        PrimeNumber primeNumber = new PrimeNumber();
+        primeNumber.Prime();
         break;
     default:
         Console.WriteLine("Invalid Option");
